@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Your Todos</h3>
+  <div>
+    <p data-bind="if: !hasTodos">Nothing yet.</p>
+    <a href="#/add">Add</a>    
+    <a href="#/">Home</a>    
+  </div>
+  <div data-bind="if: hasTodos">
+    <ol class="todolist" data-bind="foreach: items">
+      <li>
+        <!-- ko if: done() -->
+        <s data-bind="text: todo"></s>
+        <a href="javascript:void(0)" data-bind="click: $root.toggle" class="small">Not Done</a>
+        <!-- /ko -->
+        <!-- ko if: !done() -->
+        <span data-bind="text: todo"></span>
+        <a href="javascript:void(0)" data-bind="click: $root.toggle" class="small">Done</a>
+        <!-- /ko -->
+      </li>
+    </ol>
+  </div>
+</div>

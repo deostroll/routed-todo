@@ -11,3 +11,9 @@
 .huge {
     font-size: 32px;
 }
+
+.todolist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
