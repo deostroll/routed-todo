@@ -1,0 +1,13 @@
+.display-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    height: 105px;
+    text-align:center;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.huge {
+    font-size: 32px;
+}

@@ -1,0 +1,29 @@
+<div data-bind="if: hasTodos">
+  <div class="row">
+    <div class="col">
+      <div class="display-card">
+        <p>Total</p>
+        <p class="huge" data-bind="text: items().length"></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="display-card">
+        <p>Completed</p>
+        <p class="huge" data-bind="text: itemsDone"></p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="display-card">
+        <p>Not Completed</p>
+        <p class="huge" data-bind="text: itemsNotDone"></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div data-bind="if: !hasTodos">
+  <p>Nothing. Enjoy!!</p>
+</div>
+<div>
+  <a href="#/add">Add</a>
+  <a href="#/todo">View</a>  
+</div>
